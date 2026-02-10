@@ -1,21 +1,15 @@
-# # Object Oriented programming in Python 
+# Object Oriented programming in Python 
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
 
-# string = "Hello"
-# print(string.upper()) # Object upper acting on type string in the string variable  
+    def drive(self):
+        print(f"{self.brand}{self.model} is driving")
 
-class Dog:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-        
-    def get_name(self):
-        return self.name
-    def get_age(self):
-        return self.age
-    def set_age(self, age):
-        self.age = age
+car1 = Car("Toyota", "Corolla")
+car2 = Car("Mazda","CX-7")
 
-d = Dog("Bosco", 15)
-d.set_age(5)
-print(d.get_age())
+car1.drive()
+car2.drive()
 
