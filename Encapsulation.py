@@ -26,6 +26,7 @@ account = BankAccount("Marvin", 1000)
 account.deposit(500)
 print(f"Your account balance is ", account.get_balance() )
 account.withdraw(2000)
+print("__________________________")
 
 """Never expose sensitive attributes directly. Always control access through methods. If you allow direct modification, you risk breaking the logic of the program"""
 
@@ -48,6 +49,7 @@ p = Person("Sean")
 p.set_age(10)
 print(p.get_age())
 p.set_age(-5)
+print("__________________________")
 
 # quiz 2
 
@@ -66,9 +68,10 @@ class Account:
         return self._pin
 
 a = Account("Dick", 1234)
-print("__________________________")
 a.set_pin(1234)
 print(a.get_pin())
 a.set_pin(123)
+print("__________________________")
+
 
         
